@@ -50,13 +50,9 @@ export default function Home(): JSX.Element {
     return formatted;
   }, [data]);
 
-  // TODO RENDER LOADING SCREEN
-
   if (isLoading && !isError) {
     return <Loading />;
   }
-
-  // TODO RENDER ERROR SCREEN
 
   if (isLoading && isError) {
     return <Error />;
